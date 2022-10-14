@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B0C1676-8145-431D-8A37-BE7FC84DF35C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FoodShop</RootNamespace>
+    <AssemblyName>FoodShop</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditForms\AddEditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditDepartment.Designer.cs">
+      <DependentUpon>AddEditDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditGroup.Designer.cs">
+      <DependentUpon>AddEditGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditProduct.Designer.cs">
+      <DependentUpon>AddEditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditReturn.Designer.cs">
+      <DependentUpon>AddEditReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditSell.Designer.cs">
+      <DependentUpon>AddEditSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditSupply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForms\AddEditSupply.Designer.cs">
+      <DependentUpon>AddEditSupply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\DepartmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\DepartmentsForm.Designer.cs">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\GroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\GroupsForm.Designer.cs">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries.Designer.cs">
+      <DependentUpon>Queries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\ReturnsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\ReturnsForm.Designer.cs">
+      <DependentUpon>ReturnsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\SellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\SellsForm.Designer.cs">
+      <DependentUpon>SellsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\SuppliesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\SuppliesForm.Designer.cs">
+      <DependentUpon>SuppliesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEditForms\AddEditDepartment.resx">
+      <DependentUpon>AddEditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditForms\AddEditGroup.resx">
+      <DependentUpon>AddEditGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditForms\AddEditProduct.resx">
+      <DependentUpon>AddEditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditForms\AddEditReturn.resx">
+      <DependentUpon>AddEditReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditForms\AddEditSell.resx">
+      <DependentUpon>AddEditSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditForms\AddEditSupply.resx">
+      <DependentUpon>AddEditSupply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\DepartmentsForm.resx">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\GroupsForm.resx">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Queries.resx">
+      <DependentUpon>Queries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\ReturnsForm.resx">
+      <DependentUpon>ReturnsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\SellsForm.resx">
+      <DependentUpon>SellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\SuppliesForm.resx">
+      <DependentUpon>SuppliesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
